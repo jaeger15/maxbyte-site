@@ -1,0 +1,368 @@
+/* =========================================
+   CONTACT PAGE
+   Dipakai bersama homepage.css (navbar, footer, tombol, warna)
+========================================= */
+
+/* Link menu "Contact" yang sedang aktif */
+
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+.mobile-nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.contact {
+    padding: 150px 8% 90px;
+
+    background:
+        radial-gradient(circle at 50% 0%, #DBEAFB 0%, transparent 42%),
+        linear-gradient(180deg, #FFFFFF, #F5FAFD);
+}
+
+.contact-head {
+    max-width: 640px;
+    margin: 0 auto 56px;
+    text-align: center;
+    animation: heroEnter .9s ease both;
+}
+
+.contact-head h1 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 56px);
+    line-height: 1.13;
+    letter-spacing: -2.5px;
+    font-weight: 800;
+    color: #15364B;
+}
+
+.contact-head h1 span {
+    color: var(--blue);
+}
+
+.contact-grid {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 26px;
+    align-items: stretch;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.contact-form-card {
+    padding: 38px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+
+    box-shadow: 0 25px 60px rgba(15, 67, 96, .09);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    background: #F7FAFC;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+
+    transition: border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.7;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #A3B1BB;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    background: white;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 4px rgba(0, 106, 214, .12);
+}
+
+.contact-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Tampilan setelah pesan terkirim */
+
+.contact-success {
+    min-height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    text-align: center;
+}
+
+.contact-success[hidden] {
+    display: none;
+}
+
+.success-icon {
+    width: 64px;
+    height: 64px;
+
+    display: grid;
+    place-items: center;
+
+    background: #E8F2FD;
+    color: var(--blue);
+    border-radius: 50%;
+}
+
+.success-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-success h3 {
+    font-size: 22px;
+    letter-spacing: -.5px;
+}
+
+.contact-success p {
+    max-width: 320px;
+    margin-bottom: 6px;
+
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* =========================
+   INFO PANEL (biru)
+========================= */
+
+.contact-panel {
+    position: relative;
+    overflow: hidden;
+
+    padding: 38px 34px;
+
+    background: linear-gradient(120deg, #006AD6, #1E8FEA);
+    border-radius: 22px;
+    color: white;
+
+    box-shadow: 0 25px 60px rgba(0, 106, 214, .22);
+}
+
+.contact-panel::after {
+    content: "";
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+    right: -90px;
+    bottom: -110px;
+
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 28px rgba(255, 255, 255, .03),
+        0 0 0 58px rgba(255, 255, 255, .03);
+
+    pointer-events: none;
+}
+
+.panel-heading {
+    position: relative;
+    z-index: 1;
+
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: .85;
+}
+
+.contact-list {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 26px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    list-style: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    background: rgba(255, 255, 255, .16);
+    border-radius: 12px;
+}
+
+.contact-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.contact-label {
+    font-size: 14px;
+    opacity: .7;
+}
+
+.contact-item a,
+.contact-item span {
+    display: inline-block;
+    margin-top: 3px;
+
+    font-size: 13px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s ease;
+}
+
+.contact-item a:hover {
+    background-size: 100% 1.5px;
+}
+
+/* =========================
+   FAQ SHORTCUT
+========================= */
+
+.contact-faq {
+    max-width: 1050px;
+    margin: 26px auto 0;
+    padding: 22px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.contact-faq p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.contact-faq .btn {
+    flex-shrink: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .contact {
+        padding: 135px 5% 70px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .contact {
+        padding-top: 120px;
+    }
+
+    .contact-head h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .contact-form-card {
+        padding: 26px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-panel {
+        padding: 30px 24px;
+    }
+
+    .contact-faq {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

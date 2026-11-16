@@ -1,0 +1,340 @@
+/* =========================================
+   PRICING PAGE
+   Dipakai bersama homepage.css (navbar, footer, kartu harga, FAQ, warna)
+========================================= */
+
+/* Link menu "Pricing" yang sedang aktif */
+
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+.mobile-nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.pricing-hero {
+    padding: 160px 8% 40px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 50% 0%, #DBEAFB 0%, transparent 45%),
+        linear-gradient(180deg, #FFFFFF, #F7FAFC);
+}
+
+.pricing-hero-inner {
+    max-width: 760px;
+    margin: auto;
+    animation: heroEnter .9s ease both;
+}
+
+.pricing-hero h1 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.13;
+    letter-spacing: -2.5px;
+    font-weight: 800;
+    color: #15364B;
+}
+
+.pricing-hero h1 span {
+    color: var(--blue);
+}
+
+.pricing-hero .section-description {
+    max-width: 560px;
+    font-size: 16px;
+}
+
+.pricing-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    margin: 32px 0 30px;
+}
+
+/* =========================
+   PLAN CARDS
+   (memakai .price-card dari homepage.css)
+========================= */
+
+.pricing.pricing-page {
+    padding-top: 40px;
+}
+
+.price-save {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 8px;
+
+    background: var(--blue-light);
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+/* =========================
+   COMPARE TABLE
+========================= */
+
+.compare {
+    padding: 100px 8%;
+    background: white;
+}
+
+.compare-wrap {
+    max-width: 1000px;
+    margin: auto;
+
+    overflow-x: auto;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.compare-table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 18px 22px;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 14px;
+    text-align: center;
+    color: #647887;
+}
+
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+    position: sticky;
+    left: 0;
+
+    background: white;
+    text-align: left;
+}
+
+.compare-table tbody th {
+    font-weight: 700;
+    color: #17364A;
+}
+
+.compare-table thead th {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    background: #F7FAFC;
+
+    font-size: 14px;
+    font-weight: 800;
+    color: #17364A;
+}
+
+.compare-table thead th:first-child {
+    background: #F7FAFC;
+}
+
+.compare-table thead small {
+    display: block;
+    margin-top: 4px;
+
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.compare-table .popular {
+    background: #F2F8FE;
+}
+
+.compare-table thead th.popular {
+    color: var(--blue);
+    background: #E8F2FD;
+}
+
+.compare-table .value {
+    font-weight: 800;
+    color: #17364A;
+}
+
+.compare-table .yes {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.compare-table .no {
+    color: #B7C3CC;
+    font-size: 16px;
+}
+
+.compare-note {
+    max-width: 1000px;
+    margin: 14px auto 0;
+
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* =========================
+   FAQ (memakai .faq dari homepage.css)
+========================= */
+
+.faq.pricing-faq {
+    background: #F7FAFC;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .pricing-hero {
+        padding: 140px 5% 30px;
+    }
+
+    .compare {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .pricing-hero {
+        padding-top: 125px;
+    }
+
+    .pricing-hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .compare-table th,
+    .compare-table td {
+        padding: 15px 14px;
+    }
+}
+
+/* Teks yang hanya terbaca oleh pembaca layar */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* =========================
+   BANNER AJAKAN (CTA) DI BAWAH HALAMAN
+   (gaya ini sebelumnya ada di homepage.css, tapi sudah terhapus dari sana)
+========================= */
+
+.ai-section {
+    padding: 90px 8%;
+    background: white;
+}
+
+.ai-banner {
+    position: relative;
+    overflow: hidden;
+
+    padding: 58px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    background: linear-gradient(115deg, #004E9E, #0A7BE0);
+    border-radius: 20px;
+
+    color: white;
+}
+
+.ai-banner::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: 12%;
+    top: -180px;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 35px rgba(255, 255, 255, .025),
+        0 0 0 75px rgba(255, 255, 255, .025);
+}
+
+.ai-banner-content {
+    max-width: 550px;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-banner h2 {
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+
+.ai-banner p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .8);
+}
+
+.ai-banner .btn {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+
+    background: white;
+    color: var(--blue);
+    border-color: white;
+}
+
+.ai-banner .btn:hover {
+    background: var(--blue-light);
+}
+
+@media (max-width: 950px) {
+    .ai-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ai-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px;
+    }
+}

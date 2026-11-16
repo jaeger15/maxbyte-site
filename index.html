@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maxbyte</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="homepage.css">
+
+    <!-- JavaScript -->
+    <script src="homepage.js" defer></script>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar" id="navbar">
+
+    <a href="#home" class="logo">
+            <img src="final_logo.png" class="logo-blue" alt="Maxbyte">
+            <img src="final_logo_2.png" class="logo-white" alt="Maxbyte">
+        </a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="detail_about.html">About Us</a>
+        <a href="detail_features.html">Features</a>
+        <a href="detail_pricing.html">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="login.html" class="login">Log In</a>
+        <a href="getstarted.html" class="nav-cta">Get Started →</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false">
+
+        <svg viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+
+    </button>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="detail_about.html">About Us</a>
+        <a href="detail_features.html">Features</a>
+        <a href="detail_pricing.html">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="login.html">Log in</a>
+        <a href="getstarted.html" class="mobile-cta">Get Started →</a>
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            CLOUD STORAGE FOR CREATIVES
+        </div>
+
+        <h1>
+            Save, send and<br>
+            manage your files on
+            <span>Maxbyte</span>
+        </h1>
+
+        <p class="hero-description">
+            Maxbyte can offer you efficiency and practicality in working for free and affordable 
+            packages for those of you who need digital storage space that supports creative activities.
+
+        </p>
+
+        <div class="hero-buttons">
+            <a href="getstarted.html" class="btn">
+                Get Started Free →
+            </a>
+
+            <a href="#features" class="btn btn-outline">
+                Explore Features
+            </a>
+        </div>
+
+        <p class="hero-note">
+            Start from 1TB for free, without complex workflow.
+        </p>
+
+    </div>
+
+
+    <!-- DASHBOARD MOCKUP -->
+
+    <div class="hero-visual">
+
+        <div class="dashboard">
+
+            <div class="dashboard-top">
+
+                <div class="dash-brand">
+                    <img src="final_logo.png" alt="Maxbyte">
+                </div>
+
+                <div class="avatar">J</div>
+
+            </div>
+
+
+            <div class="dash-layout">
+
+                <aside class="dash-sidebar">
+
+                    <div class="side-item active">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        </svg>
+                        Overview
+                    </div>
+
+                    <div class="side-item">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2">
+                            <path d="M3 7h7l2 2h9v10H3z"/>
+                        </svg>
+                        My Files
+                    </div>
+
+                    <div class="side-item">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="8" r="3"/>
+                            <circle cx="17" cy="9" r="2"/>
+                            <path d="M3 20c0-4 2-6 6-6s6 2 6 6m0-5c4-1 7 1 7 5"/>
+                        </svg>
+                        Shared
+                    </div>
+
+                    <div class="side-item">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2">
+                            <path d="M12 3v12m-5-5 5 5 5-5M4 19h16"/>
+                        </svg>
+                        Convert
+                    </div>
+
+                    <div class="side-item">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m4 6 2 2 3-3"/>
+                            <path d="m4 14 2 2 3-3"/>
+                            <path d="M13 7h7M13 15h7"/>
+                        </svg>
+                        Tasks
+                    </div>
+
+                    <div class="side-item">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="4" rx="1"/>
+                            <path d="M5 8v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/>
+                            <path d="M10 12h4"/>
+                        </svg>
+                        Archive
+                    </div>
+
+                </aside>
+
+
+                <div class="dash-main">
+
+                    <div class="dash-heading">
+                        <h3>Overview</h3>
+                        <span>My Workspace</span>
+                    </div>
+
+
+                    <div class="storage-card">
+
+                        <p>Available Storage</p>
+
+                        <h2>
+                            380 GB
+                            <small>/ 1 TB</small>
+                        </h2>
+
+                        <div class="progress">
+                            <span></span>
+                        </div>
+
+                        <div class="storage-info">
+                            <span>38% Used</span>
+                            <span>620 GB Free</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="file-heading">Recent Files</div>
+
+
+                    <div class="file">
+
+                        <div class="file-left">
+                            <div class="file-icon pdf">PDF</div>
+
+                            <div>
+                                <div class="file-name">Project_Proposal.pdf</div>
+                                <div class="file-size">2.4 MB</div>
+                            </div>
+                        </div>
+
+                        <span class="file-date">Today</span>
+
+                    </div>
+
+
+                    <div class="file">
+
+                        <div class="file-left">
+                            <div class="file-icon folder">▰</div>
+
+                            <div>
+                                <div class="file-name">Design Assets</div>
+                                <div class="file-size">24 Files</div>
+                            </div>
+                        </div>
+
+                        <span class="file-date">Yesterday</span>
+
+                    </div>
+
+
+                    <div class="file">
+
+                        <div class="file-left">
+                            <div class="file-icon image">IMG</div>
+
+                            <div>
+                                <div class="file-name">Brand_Identity.png</div>
+                                <div class="file-size">5.8 MB</div>
+                            </div>
+                        </div>
+
+                        <span class="file-date">2 days ago</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FLOATING AI -->
+
+        <div class="floating-ai">
+
+            <div class="ai-icon">✦</div>
+
+            <div>
+                <strong>AI Organizer</strong>
+                <small>Your files, automatically organized.</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT US
+========================= -->
+
+<section class="intro about-home" id="about">
+
+    <div class="about-home-inner">
+
+        <div class="about-home-text">
+
+            <p class="section-label">About Us</p>
+
+            <h2 class="section-title">
+                A Smarter Space for Every
+                <span class="hl">Creative Mind.</span>
+            </h2>
+
+            <p class="about-home-description">
+                Founded in 2026 by five Informatics students at Bunda Mulia University,
+                Maxbyte was created to redefine how people store and manage their digital assets.
+                Built for designers, freelancers, and students, we believe cloud storage should be
+                practical, flexible, and affordable. More than just a place to keep files,
+                Maxbyte is designed to become part of your everyday workflow.
+            </p>
+
+            <a href="detail_about.html" class="btn about-home-btn">
+                See more →
+            </a>
+
+        </div>
+
+        <div class="about-visual">
+
+            <span class="about-blob-back"></span>
+            <span class="about-dots"></span>
+
+            <div class="about-photo-blob">
+                <img src="working.jpg"
+                     onerror="this.style.display='none'">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="features" id="features">
+
+    <div class="section-heading">
+
+        <p class="section-label">What Makes Us Different</p>
+
+        <h2 class="section-title">
+            Everything You Need For Your Creative Assets,<br>
+            All in One Place.
+        </h2>
+
+        <p class="section-description">
+            Powerful tools that help you spend less time managing files
+            and more time getting things done.
+        </p>
+
+    </div>
+
+
+    <div class="feature-marquee">
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 18a5 5 0 0 1-.4-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9H7z"/><path d="M12 11v8m-3-3 3 3 3-3"/>
+                </svg>
+            </div>
+
+            <h3>Flexible Cloud Storage</h3>
+
+            <p>
+                Start with 1 TB of storage for free. Keep all your creative files in one place.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m21 3-9.5 9.5"/><path d="M21 3 14.5 21l-3-8.5L3 9.5z"/>
+                </svg>
+            </div>
+
+            <h3>Send Files by Username</h3>
+
+            <p>
+                Send files, images, videos, and audio to other Maxbyte users. No links, no email.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6z"/>
+                </svg>
+            </div>
+
+            <h3>File Tools</h3>
+
+            <p>
+                Convert, compress, resize, rotate, and watermark your files without another app.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3 14.5 9.5 21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/>
+                </svg>
+            </div>
+
+            <h3>AI Organizer</h3>
+
+            <p>
+                Tell AI how to organize your files. It also finds and deletes duplicates.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+                </svg>
+            </div>
+
+            <h3>Smart Search</h3>
+
+            <p>
+                Find files fast by file type or by the tags you added.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3 20 7v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="m9 12 2 2 4-4"/>
+                </svg>
+            </div>
+
+            <h3>Safe Downloads</h3>
+
+            <p>
+                Every file is checked for viruses before you download it.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m4 6 2 2 3-3"/><path d="m4 14 2 2 3-3"/><path d="M13 7h7M13 15h7"/>
+                </svg>
+            </div>
+
+            <h3>Task Progress</h3>
+
+            <p>
+                Follow your project step by step and keep deadlines under control.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/>
+                </svg>
+            </div>
+
+            <h3>File History</h3>
+
+            <p>
+                See every change to a file and restore an earlier version anytime.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/><path d="M10 12h4"/>
+                </svg>
+            </div>
+
+            <h3>Archive</h3>
+
+            <p>
+                Keep files you do not need now without deleting them.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="m6 6 1 14h10l1-14"/><path d="M10 11v5M14 11v5"/>
+                </svg>
+            </div>
+
+            <h3>Recycle Bin</h3>
+
+            <p>
+                Deleted something by mistake? Get it back from the recycle bin.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/>
+                </svg>
+            </div>
+
+            <h3>Share Workspace by Link</h3>
+
+            <p>
+                Invite people with a link so they can view or edit your files.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>
+                </svg>
+            </div>
+
+            <h3>Customizable Background</h3>
+
+            <p>
+                Make your workspace look the way you like.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 12 12 20 4 12V4h8z"/><circle cx="8.5" cy="8.5" r="1.2"/>
+                </svg>
+            </div>
+
+            <h3>Free &amp; Affordable Plans</h3>
+
+            <p>
+                Start for free, then upgrade to a plan that is friendly to your wallet.
+            </p>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="features-more">
+       <a href="detail_features.html" class="btn btn-outline see-more">
+           See features details →
+       </a>
+   </div>
+
+</section>
+
+<!-- =========================
+     PRICING
+========================= -->
+
+<section class="pricing" id="pricing">
+
+    <div class="section-heading">
+
+        <p class="section-label">Simple & Flexible Pricing</p>
+
+        <h2 class="section-title">
+            The Right Space for Everyone.
+        </h2>
+
+        <p class="section-description">
+            Start for free and upgrade whenever your digital world
+            needs more space.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-grid">
+
+
+        <!-- BASIC!!!! -->
+
+        <div class="price-card">
+
+            <h3 class="plan-name">Basic</h3>
+
+            <p class="plan-description">
+                Everything you need to get started.
+            </p>
+
+            <div class="price">Free</div>
+
+            <p class="price-annual">Free forever</p>
+
+            <a href="#signup" class="btn btn-outline">
+                Get Started Free
+            </a>
+
+            <hr class="plan-divider">
+
+            <p class="includes">What's included:</p>
+
+            <ul class="plan-features">
+                <li><span class="check">✓</span> 1 TB Cloud Storage</li>
+                <li><span class="check">✓</span> Up to 3 Members</li>
+                <li><span class="check">✓</span> AI Organizer</li>
+                <li><span class="check">✓</span> 50 File Conversions / Day</li>
+                <li><span class="check">✓</span> Unlimited File Sharing by Username</li>
+                <li><span class="check">✓</span> Access To All The Basic File Customization Features</li>
+            </ul>
+
+        </div>
+
+
+        <!-- PROOO -->
+
+        <div class="price-card popular">
+
+            <div class="popular-tag">MOST POPULAR</div>
+
+            <h3 class="plan-name">Pro</h3>
+
+            <p class="plan-description">
+                More space and tools for productivity.
+            </p>
+
+            <div class="price">
+                Rp27.000<span> / month</span>
+            </div>
+
+            <p class="price-annual">
+                Or Rp270.000 / year <span class="price-save">Save Rp54.000</span>
+            </p>
+
+            <a href="#signup" class="btn">
+                Choose Pro →
+            </a>
+
+            <hr class="plan-divider">
+
+            <p class="includes">What's Included:</p>
+
+            <ul class="plan-features">
+                <li><span class="check">✓</span> 2 TB Cloud Storage</li>
+                <li><span class="check">✓</span> Up to 5 Members</li>
+                <li><span class="check">✓</span> AI Organizer</li>
+                <li><span class="check">✓</span> 150 File Conversions / day</li>
+                <li><span class="check">✓</span> 3D File Preview</li>
+                <li><span class="check">✓</span> Unlimited File Sharing by Username</li>
+                <li><span class="check">✓</span> Customization Workspace</li>
+                <li><span class="check">✓</span> Full Access To The File Customizable Features</li>
+            </ul>
+
+        </div>
+
+
+        <!-- FAMILY -->
+
+        <div class="price-card">
+
+            <h3 class="plan-name">Family</h3>
+
+            <p class="plan-description">
+                One space for your whole family.
+            </p>
+
+            <div class="price">
+                Rp69.000<span> / month</span>
+            </div>
+
+            <p class="price-annual">
+                Or Rp690.000 / year <span class="price-save">Save Rp138.000</span>
+            </p>
+
+            <a href="#signup" class="btn btn-outline">
+                Choose Family
+            </a>
+
+            <hr class="plan-divider">
+
+            <p class="includes">What's Included:</p>
+
+            <ul class="plan-features">
+                <li><span class="check">✓</span> 4 TB Cloud Storage</li>
+                <li><span class="check">✓</span> Up to 10 Members</li>
+                <li><span class="check">✓</span> AI Organizer</li>
+                <li><span class="check">✓</span> Unlimited File Conversion</li>
+                <li><span class="check">✓</span> 3D File Preview</li>
+                <li><span class="check">✓</span> Unlimited File Sharing by Username</li>
+                <li><span class="check">✓</span> Customization Workspace</li>
+                <li><span class="check">✓</span> Full Access To The File Customizable Features</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="pricing-more">
+       <a href="detail_pricing.html" class="btn btn-outline see-pricing">
+           See pricing details →
+       </a>
+   </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="faq" id="faq">
+
+    <div class="section-heading">
+
+        <p class="section-label">Got Questions?</p>
+
+        <h2 class="section-title">
+            Frequently Asked Questions.
+        </h2>
+
+    </div>
+
+
+    <div class="faq-list">
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                What is Maxbyte?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    <p>
+                        Maxbyte is a cloud storage platform designed specifically for designers, students, freelancers, and creative professionals. 
+                        Users can store and organize various file formats—such as designs, images, videos, audio, and project documents—via a clean, 
+                        modern, and intuitive interface. Beyond storage, users can also send, process, and manage their files all within a single application, 
+                        eliminating the need to switch between different tools.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Is Maxbyte free to use?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    <p>
+                        Yes! Maxbyte offers a free Standard plan with 1 TB of
+                        cloud storage and essential productivity features.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                What is AI Organizer?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    <p>
+                        AI Organizer is an intelligent assistant designed
+                        to help users organize and manage their digital files.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Can I share files with other people?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    <p>
+                        Yes. Maxbyte supports file sharing through usernames, making it easy to share files and collaborate with other members. 
+                        You can also convert your files into different formats before sharing them. Not only that, recipients can also convert the files they receive into their preferred formats, 
+                        making file management and collaboration even more flexible and convenient.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Can I upgrade my subscription?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    <p>
+                        You can choose a subscription plan that matches
+                        your storage requirements and collaboration needs.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="faq-more">
+
+        <div>
+            <h3>Still have questions?</h3>
+            <p>Can't find what you're looking for? Our team is happy to help.</p>
+        </div>
+
+        <a href="contact.html" class="btn">Contact Us →</a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+
+        <div>
+
+            <a href="#home" class="logo">
+                <img src="final_logo_2.png" class="footer-logo" alt="Maxbyte">
+            </a>
+
+            <p class="footer-description">
+                Your digital world, organized.
+                Store, manage, and share your files with a smarter
+                cloud storage experience.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Resources</h4>
+
+            <a href="#faq">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#features">AI Organizer</a>
+            <a href="#features">File Sharing</a>
+            <a href="#features">Cloud Storage</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Account</h4>
+
+            <a href="#login">Log in</a>
+            <a href="#signup">Get Started</a>
+            <a href="#pricing">Subscription</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Maxbyte. All rights reserved.</p>
+
+        <p>Built to simplify your digital world.</p>
+
+    </div>
+
+</footer>
+</body>
+</html>

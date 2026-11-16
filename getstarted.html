@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demo Get Started | Maxbyte</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS: homepage.css dulu, lalu auth.css -->
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+<main class="auth">
+
+    <!-- =========================
+         PANEL BIRU
+    ========================= -->
+
+    <aside class="auth-aside">
+
+        <a href="index.html#home" class="auth-logo" aria-label="Maxbyte, back to home">
+            <img src="final_logo_2.png" alt="Maxbyte">
+        </a>
+
+        <div class="auth-aside-body">
+
+            <h2>Your Files.<br>Your Space.<br>Your Maxbyte.</h2>
+
+            <p class="auth-aside-text">Simplify the way you store, organize, and share your digital world.</p>
+
+            <ul class="auth-perks">
+                <li><span class="tick">✓</span> 1 TB of free cloud storage</li>
+                <li><span class="tick">✓</span> AI Organizer included</li>
+                <li><span class="tick">✓</span> Share files by username</li>
+            </ul>
+
+        </div>
+
+        <p class="auth-aside-foot">© 2026 Maxbyte. Student project, Universitas Bunda Mulia.</p>
+
+    </aside>
+
+
+    <!-- =========================
+         FORM (DUMMY)
+    ========================= -->
+
+    <section class="auth-main">
+
+        <a href="index.html#home" class="auth-back">← Back to home</a>
+
+        <div class="auth-card">
+
+            <h1>Create your account</h1>
+
+            <p class="auth-sub">Start with 1 TB of free storage. No complicated workflow.</p>
+
+            <form class="auth-form" data-auth="signup" novalidate onsubmit="return false;">
+
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name"
+                           autocomplete="off" placeholder="Your Fullname">
+                </div>
+
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username"
+                           autocomplete="off" placeholder="Your Username">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input type="text" id="email"
+                           autocomplete="off" placeholder="Your Email">
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="input-wrap">
+                        <input type="text" id="password"
+                               autocomplete="off" placeholder="Your Password"
+                               style="-webkit-text-security: disc;">
+                    </div>
+                    <div class="strength" data-level="0">
+                        <div class="strength-bars" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p class="strength-text">Use at least 8 characters</p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="confirm">Confirm password</label>
+                    <div class="input-wrap">
+                        <input type="text" id="confirm"
+                               autocomplete="off" placeholder="Confirm Your Password"
+                               style="-webkit-text-security: disc;">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="check-row" for="terms">
+                        <input type="checkbox" id="terms">
+                        <span>I agree to the <a href="#terms">Terms of Service</a>
+                        and <a href="#privacy">Privacy Policy</a>.</span>
+                    </label>
+                </div>
+
+                <button type="button" class="btn auth-submit">Create account (demo) →</button>
+
+            </form>
+
+            <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demo Log In | Maxbyte</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS: homepage.css dulu, lalu auth.css -->
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+<main class="auth">
+
+    <!-- =========================
+         PANEL BIRU
+    ========================= -->
+
+    <aside class="auth-aside">
+
+        <a href="index.html#home" class="auth-logo" aria-label="Maxbyte, back to home">
+            <img src="final_logo_2.png" alt="Maxbyte">
+        </a>
+
+        <div class="auth-aside-body">
+
+            <h2>Welcome back to<br>Your Maxbyte.</h2>
+
+            <p class="auth-aside-text">Pick up right where you left off. Your files are organized and waiting.</p>
+
+            <ul class="auth-perks">
+                <li><span class="tick">✓</span> 1 TB of free cloud storage</li>
+                <li><span class="tick">✓</span> AI Organizer included</li>
+                <li><span class="tick">✓</span> Share files by username</li>
+            </ul>
+
+        </div>
+
+        <p class="auth-aside-foot">© 2026 Maxbyte. Student project, Universitas Bunda Mulia.</p>
+
+    </aside>
+
+
+    <!-- =========================
+         FORM (DUMMY)
+    ========================= -->
+
+    <section class="auth-main">
+
+        <a href="index.html#home" class="auth-back">← Back to home</a>
+
+        <div class="auth-card">
+
+            <h1>Welcome back</h1>
+
+            <p class="auth-sub">Log in to open your files, your workspace, and everything you have shared.</p>
+            <form class="auth-form" data-auth="login" novalidate onsubmit="return false;">
+
+                <div class="field">
+                    <label for="identifier">Email or username</label>
+                    <input type="text" id="identifier"
+                           autocomplete="off" placeholder="Your Username">
+                </div>
+
+                <div class="field">
+                    <div class="field-label-row">
+                        <label for="password">Password</label>
+                        <a href="#forgot">Forgot password?</a>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" id="password"
+                               autocomplete="off" placeholder="Your Password"
+                               style="-webkit-text-security: disc;">
+                    </div>
+                </div>
+
+                <label class="check-row">
+                    <input type="checkbox" id="remember">
+                    <span>Keep me logged in on this device</span>
+                </label>
+
+                <button type="button" class="btn auth-submit">Log In</button>
+
+            </form>
+
+            <!-- Social Login Divider -->
+            <div class="auth-divider">
+                <span></span>
+                <p>Or continue with</p>
+                <span></span>
+            </div>
+
+            <!-- Social Login (dummy, tanpa logo merek) -->
+            <div class="social-login">
+
+                <button type="button" class="social-btn">
+                    <span>Continue with Google</span>
+                </button>
+
+                <button type="button" class="social-btn">
+                    <span>Continue with Apple</span>
+                </button>
+
+                <button type="button" class="social-btn">
+                    <span>Continue with Microsoft</span>
+                </button>
+
+            </div>
+
+            <p class="auth-switch">New on Maxbyte? <a href="getstarted.html">Get Started Here</a></p>
+
+        </div>
+
+    </section>
+
+</main>
+</body>
+</html>

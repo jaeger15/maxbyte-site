@@ -1,0 +1,466 @@
+/* =========================================
+   FEATURES PAGE
+   Dipakai bersama homepage.css (navbar, footer, tombol, warna)
+========================================= */
+
+/* Link menu "Features" yang sedang aktif */
+
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+.mobile-nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.features-hero {
+    padding: 160px 8% 90px;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 50% 0%, #DBEAFB 0%, transparent 45%),
+        linear-gradient(180deg, #FFFFFF, #F5FAFD);
+}
+
+.features-hero-inner {
+    max-width: 760px;
+    margin: auto;
+    animation: heroEnter .9s ease both;
+}
+
+.features-hero h1 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.13;
+    letter-spacing: -2.5px;
+    font-weight: 800;
+    color: #15364B;
+}
+
+.features-hero h1 span {
+    color: var(--blue);
+}
+
+.features-hero .section-description {
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.features-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 32px;
+}
+
+/* Pill navigasi ke tiap fitur */
+
+.feature-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 44px;
+}
+
+.feature-chip {
+    padding: 9px 16px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: .25s ease;
+}
+
+.feature-chip:hover {
+    background: var(--blue-light);
+    border-color: #A6CBF5;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   FEATURE DETAIL
+========================= */
+
+.feature-detail {
+    padding: 90px 8%;
+    background: white;
+}
+
+.feature-detail:nth-of-type(even) {
+    background: #F7FAFC;
+}
+
+.feature-detail-inner {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.feature-detail.reverse .feature-detail-text {
+    order: 2;
+}
+
+.feature-detail-text {
+    min-width: 0;
+}
+
+.feature-detail-text .section-title {
+    margin-top: 0;
+    font-size: clamp(26px, 3vw, 36px);
+    letter-spacing: -1.2px;
+}
+
+.feature-detail-description {
+    margin-top: 16px;
+
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 2;
+}
+
+.detail-list {
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+}
+
+.detail-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+
+    color: #647887;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.detail-list .check {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+
+    display: grid;
+    place-items: center;
+
+    background: #E8F2FD;
+    border-radius: 50%;
+
+    font-size: 14px;
+}
+
+/* Panel biru di sisi lain */
+
+.feature-panel {
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+
+    padding: 32px;
+
+    background: linear-gradient(120deg, #006AD6, #1E8FEA);
+    border-radius: 22px;
+    color: white;
+
+    box-shadow: 0 25px 60px rgba(0, 106, 214, .22);
+}
+
+.feature-panel::after {
+    content: "";
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -90px;
+    top: -110px;
+
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 28px rgba(255, 255, 255, .03),
+        0 0 0 58px rgba(255, 255, 255, .03);
+
+    pointer-events: none;
+}
+
+.panel-head {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.panel-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    background: rgba(255, 255, 255, .16);
+    border-radius: 12px;
+}
+
+.panel-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: .85;
+}
+
+.panel-rows {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.panel-row {
+    padding: 16px 18px;
+
+    background: rgba(255, 255, 255, .12);
+    border-radius: 12px;
+}
+
+.panel-row-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.panel-plan {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .85;
+}
+
+.panel-value {
+    font-size: 15px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.panel-bar {
+    height: 5px;
+    margin-top: 11px;
+
+    background: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.panel-bar span {
+    display: block;
+    height: 100%;
+
+    background: white;
+    border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .features-hero {
+        padding: 140px 5% 70px;
+    }
+
+    .feature-detail {
+        padding: 70px 5%;
+    }
+
+    .feature-detail-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .feature-detail.reverse .feature-detail-text {
+        order: 0;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .features-hero {
+        padding-top: 125px;
+    }
+
+    .features-hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .feature-panel {
+        padding: 24px 20px;
+    }
+
+    .panel-row {
+        padding: 14px;
+    }
+}
+
+/* =========================
+   PANEL TAMBAHAN
+   (pill status, tag alat, teks kecil)
+========================= */
+
+.panel-pill {
+    padding: 5px 12px;
+
+    background: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.panel-sub {
+    margin-top: 6px;
+
+    font-size: 14px;
+    opacity: .7;
+}
+
+.panel-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.panel-tags span {
+    padding: 9px 16px;
+
+    background: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+/* =========================
+   BANNER AJAKAN (CTA) DI BAWAH HALAMAN
+   (gaya ini sebelumnya ada di homepage.css, tapi sudah terhapus dari sana)
+========================= */
+
+.ai-section {
+    padding: 90px 8%;
+    background: white;
+}
+
+.ai-banner {
+    position: relative;
+    overflow: hidden;
+
+    padding: 58px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    background: linear-gradient(115deg, #004E9E, #0A7BE0);
+    border-radius: 20px;
+
+    color: white;
+}
+
+.ai-banner::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: 12%;
+    top: -180px;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 35px rgba(255, 255, 255, .025),
+        0 0 0 75px rgba(255, 255, 255, .025);
+}
+
+.ai-banner-content {
+    max-width: 550px;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-banner h2 {
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+
+.ai-banner p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .8);
+}
+
+.ai-banner .btn {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+
+    background: white;
+    color: var(--blue);
+    border-color: white;
+}
+
+.ai-banner .btn:hover {
+    background: var(--blue-light);
+}
+
+@media (max-width: 950px) {
+    .ai-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ai-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px;
+    }
+}
