@@ -38,34 +38,3 @@
         });
     });
 })();
-
-
-/* =========================
-   FORM KONTAK (tampilan saja, belum terhubung ke server)
-========================= */
-
-(function () {
-    var form = document.getElementById('contactForm');
-    var success = document.getElementById('contactSuccess');
-    var again = document.getElementById('contactAgain');
-    var nameOut = document.getElementById('successName');
-    if (!form || !success) return;
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        var name = document.getElementById('cName').value.trim();
-        nameOut.textContent = name ? name.split(' ')[0] : 'friend';
-
-        form.hidden = true;
-        success.hidden = false;
-    });
-
-    if (again) {
-        again.addEventListener('click', function () {
-            form.reset();
-            success.hidden = true;
-            form.hidden = false;
-        });
-    }
-})();
